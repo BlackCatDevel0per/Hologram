@@ -1,4 +1,4 @@
---- # Poggit-CI Manifest. Open the CI at https:/p/poggit.pmmp.io//BlackCatDevel0per/Hologram
+--- # Poggit-CI Manifest. Open the CI at https:/p/poggit.pmmp.io/p/BlackCatDevel0per/Hologram
 branches:
   - main
 projects:
