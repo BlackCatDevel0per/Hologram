@@ -1,0 +1,45 @@
+ #  _   _       _   _           _____             
+ # | \ | |     | | (_)         |  __ \            
+ # |  \| | __ _| |_ ___   _____| |  | | _____   __
+ # | . ` |/ _` | __| \ \ / / _ \ |  | |/ _ \ \ / /
+ # | |\  | (_| | |_| |\ V /  __/ |__| |  __/\ V / 
+ # |_| \_|\__,_|\__|_| \_/ \___|_____/ \___| \_/  
+ # Больше плагинов в https://vk.com/native_dev
+ # По вопросам native.dev@mail.ru
+ # Этот плагин форк(клон) плагина https://github.com/fuyutsuki/Texter
+
+name: Hologram
+prefix: Hologram
+main: blackcat\Hologram\Core
+version: 1.0.0
+api: 3.0.0
+mcpe-protocol:
+- 400
+- 401
+- 402
+- 403
+- 404
+- 405
+- 406
+- 407
+- 408
+softdepend:
+  - FormAPI
+virions:
+  - libFormAPI
+author: BlackCat Developer
+
+website: https://vk.com/native_dev
+
+permissions:
+ hologram.*:
+  default: op
+  description: Разрешение на использование всех команд для голограм
+  children:
+   hologram.command.*:
+    default: op
+    description: Разрешение на использование команд голограм (не все)
+    children:
+      hologram.command.txt:
+        default: true
+        description: Разрешение на использование команды /txt
